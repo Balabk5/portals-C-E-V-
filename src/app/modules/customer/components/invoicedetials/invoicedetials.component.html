@@ -1,0 +1,53 @@
+
+<div class="finance__describ">
+    <h1>Invoice Detials</h1>
+    
+  </div>
+  <div class="search-box">
+    <button class="btn-search" (click)="myFunction()"><i class="fas fa-search"></i></button>
+    <input type="text" id="myInput" class="input-search" (click)="myFunction()" placeholder="Type to Search...">
+    
+  </div>
+  
+  <div class="table__cont">
+  <div *ngIf="invoice" >
+      
+      <table id="myTable">
+        <thead >
+          <tr>
+  
+  
+            <th>Billing document</th>
+            <th>Created by </th>
+            <th>No of foreign trade</th>
+            <th>Billing date</th>
+            <th >Translation date</th>
+            <th>Tax</th>
+            <th>Net amount</th>
+            
+            
+            
+            <th >Statistics currency</th>
+            
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let chs of invoice;let i=index " >
+            <td>{{docnumlist[i]}}</td>
+            <td>{{chs.ERNAM._text}}</td>
+            <td>{{docnumlist1[i]}}</td>
+            <td>{{datefortamt[i]}}</td>
+            <td>{{datefortamt1[i]}}</td>
+            <td>{{chs.MWSBK._text}}</td>
+            <td>{{chs.NETWR._text}}</td>
+            <td> {{chs.STWAE._text}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="fotter">
+      <button class="back__btn" [routerLink]="'/customer/financesheet'" >
+        <i class="fa-solid fa-square-caret-left"></i> Back</button>
+    </div>
+  </div>
+  

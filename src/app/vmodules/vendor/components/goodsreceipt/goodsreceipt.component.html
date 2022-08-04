@@ -1,0 +1,47 @@
+
+<div class="finance__describ">
+    <h1>Goods Receipt</h1>
+    
+  </div>
+  <div class="search-box">
+    <button class="btn-search" (click)="myFunction()"><i class="fas fa-search"></i></button>
+    <input type="text" id="myInput" class="input-search" (click)="myFunction()" placeholder="Type to Search...">
+    
+  </div>
+  
+  <div class="table__cont">
+  <div style="margin: 5%;">
+      
+      <table id="myTable">
+        <thead >
+          <tr>
+  
+  
+            <th>Username</th>
+            <th>Entry date</th>
+            <th>Posting date</th>
+            <th >Material doc number</th>
+            <th>Material doc year </th>
+            <th>Transaction/event type</th>
+            <th >Printing version</th>
+            
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let chs of goods; let i=index" >
+            <td>{{chs.USERNAME._text ||msg}}</td>
+            <td>{{dateformat1[i] ||msg}}</td>
+            <td>{{dateformat2[i] ||msg}}</td>
+            <td>{{chs.MAT_DOC._text ||msg}}</td>
+            <td>{{chs.DOC_YEAR._text ||msg}}</td>
+            <td>{{chs.TR_EV_TYPE._text ||msg}}</td>
+            <td>{{chs.VER_GR_GI_SLIP._text ||msg}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    
+    <div class="dummy"></div>
+  </div>
+  
+  

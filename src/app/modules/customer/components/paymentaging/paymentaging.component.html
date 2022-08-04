@@ -1,0 +1,59 @@
+<div class="finance__describ">
+  <h1>Payment Age</h1>
+</div>
+<div class="search-box">
+  <button class="btn-search" (click)="myFunction()">
+    <i class="fas fa-search"></i>
+  </button>
+  <input
+    type="text"
+    id="myInput"
+    class="input-search"
+    (click)="myFunction()"
+    placeholder="Type to Search..."
+  />
+</div>
+
+<div class="table__cont">
+  <div style="margin: 5%">
+    <br />
+    <table id="myTable">
+      <thead>
+        <tr>
+          <th>Billing document</th>
+          
+          <th>Billing Date</th>
+
+          <th>Fiscal period</th>
+
+          <th>Reference doc no</th>
+
+          <th>Update currency</th>
+
+          <th>Tax code</th>
+          <th>Update amount</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let chs of delivery; let i = index">
+          <td>{{ docnumlist[i] }}</td>
+          
+          <td>{{ chs.BLINE_DATE._text }}</td>
+          <td>{{ docnumlist1[i] }}</td>
+
+          <td>{{ chs.REF_DOC_NO._text }}</td>
+
+          <td>{{ chs.T_CURRENCY._text }}</td>
+
+          <td>{{ chs.TAX_CODE._text }}</td>
+          <td>{{ roundoff[i] }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="fotter">
+    <button class="back__btn" [routerLink]="'/customer/financesheet'">
+      <i class="fa-solid fa-square-caret-left"></i> Back
+    </button>
+  </div>
+</div>

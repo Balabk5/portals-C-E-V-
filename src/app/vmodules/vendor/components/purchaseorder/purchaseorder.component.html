@@ -1,0 +1,48 @@
+
+<div class="finance__describ">
+    <h1>Purchase Order</h1>
+    
+  </div>
+  <div class="search-box">
+    <button class="btn-search" (click)="myFunction()"><i class="fas fa-search"></i></button>
+    <input type="text" id="myInput" class="input-search" (click)="myFunction()" placeholder="Type to Search...">
+    
+  </div>
+  
+  <div class="table__cont">
+  <div style="margin: 5%;">
+      
+      <table id="myTable" >
+        <thead >
+          <tr>
+  
+            <th>PO number</th>
+            <th>Item incoterms</th>
+            <th>Document date
+            </th>
+            <th>Currency</th>
+            <th >Created by</th>
+            <th>Document catogery </th>
+            <th>Document status</th>
+            
+            
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let chs of purchase" >
+            <td>{{chs.PO_NUMBER._text ||msg}}</td>
+            <td>{{chs.INCOTERMS2._text ||msg}}</td>
+            <td>{{chs.DOC_DATE._text||msg}}</td>
+            <td>{{chs.CURRENCY._text ||msg}}</td>
+            <td>{{chs.CREATED_BY._text ||msg}}</td>
+            <td>{{chs.CREATED_BY._text ||msg}}</td>
+            <td>{{chs.STATUS._text ||msg}}</td>
+            
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="dummy"></div>
+  </div>
+  
+  

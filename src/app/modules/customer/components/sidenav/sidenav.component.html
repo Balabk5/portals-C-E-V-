@@ -1,0 +1,22 @@
+<nav class="sidenav">
+  <div class="cont1">
+    <h1 class="hed-main">Customer Portal</h1>
+    <div class="cust-logo">
+        <img src="/assets/images/profileiconcust.png" alt="" class="cust-logo-img">
+    </div>
+    <h1 class="prof__name">{{ fname }}</h1>
+  </div>
+
+  <ul class="list-items">
+    <li><a href="#" [routerLink]="'/customer/Profile'" [routerLinkActive]="['active']"><i class="fa-solid fa-user"></i>Profile</a></li>
+    <li><a href="#" [routerLink]="'/customer/Inquirydata'" [routerLinkActive]="['active']"><i class="fa-solid fa-magnifying-glass"></i>Inquiry data</a></li>
+    <li><a href="#" [routerLink]="'/customer/saleOrder'" [routerLinkActive]="['active']"><i class="fa-solid fa-chart-line"></i>Sales Order data</a></li>
+    <li><a href="#" [routerLink]="'/customer/listOfDelivery'" [routerLinkActive]="['active']"><i class="fa-solid fa-truck"></i>List of Delivery</a></li>
+    <li><a href="#" [routerLink]="'/customer/financesheet'" [routerLinkActive]="['active']"><i class="fa-solid fa-chart-pie"></i>Finance Sheet</a></li>
+    
+    </ul>
+    
+  <div class="list-items logout">
+    <li><a (click)="popupcust()" ><i class="fa-solid fa-arrow-right-from-bracket"></i>Logout</a></li>
+  </div>
+</nav>

@@ -1,0 +1,41 @@
+
+<div class="finance__describ">
+    <h1>PaySlip</h1>
+    
+  </div>
+  
+   
+  <div class="table__cont">
+  <div  style="margin: 5%;">
+      
+      <table >
+        <thead >
+          <tr>
+            <th>Sequence number </th>
+            <th>For period payroll</th>
+            <th>Start date</th>
+            <th>Pay Date</th>
+            <th>Pay type</th>
+            <th>Download</th>
+            
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let chs of payslip; let i = index" >
+            <td>{{roundoff[i]}}</td>
+            <td>{{chs.FPPERIOD._text}}</td>
+            <td>{{datefortamt1[i]}}</td>
+            <td>{{datefortamt2[i]}}</td>
+            <td>{{chs.PAYTYPE_TEXT._text}}</td>
+           
+            <td class = "tdd">
+              <button value = "Download" class="Download__btn" (click) = "SavePDF1(chs.SEQUENCENUMBER._text)"><i class="fa-solid fa-download"></i></button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="dummy"></div>
+  </div>
+  
+  

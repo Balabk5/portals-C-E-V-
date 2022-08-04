@@ -1,0 +1,139 @@
+.table__cont{
+    height: 70vh;
+    width: 82rem;
+    
+}
+.dummy{
+    height: 10rem;
+    width: 82rem;
+}
+.finance__describ{
+    height: 7rem;
+    width: 50rem;
+    margin-top: 2rem;
+    margin-left: 17rem;
+    border-bottom: 1px solid black;
+    margin-bottom: 4rem;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; */
+
+}
+.finance__describ h1,.finance__describ h3{
+    text-align: center;
+}
+.finance__describ h1{
+    font-size: 4rem;
+    padding-top: 1rem;
+    
+    color: black;
+}
+table {
+    font-family: "Open Sans", sans-serif;
+    margin-bottom: 5rem;
+    margin-left: 2rem;
+    margin-top: 7rem;
+    border-collapse: collapse;
+    border-spacing: 0;
+    table-layout: auto;
+    width: 100%;
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    white-space: nowrap;
+    overflow: scroll;
+}
+
+table thead tr {
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+table thead tr th {
+    background: black;
+    padding: 0.75rem 1.5rem;
+    vertical-align: middle;
+}
+
+table tbody tr:nth-child(odd) td {
+    background: #ffffff;
+}
+
+table tbody tr:nth-child(even) td {
+    background: #edf2f7;
+}
+
+table tbody td {
+    color: #1a202c;
+    text-align: left;
+    padding: 1.5rem 1.5rem;
+    vertical-align: middle;
+    font-size: 1.125rem;
+    font-weight: normal;
+}
+
+  
+
+.search__box__cust{
+    margin-left: 20%;
+}
+
+.search-box{
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    top: 25%;
+    right: 3%;
+
+  }
+  .input-search{
+    height: 50px;
+    width: 50px;
+    border-style: none;
+    padding: 10px;
+    font-size: 18px;
+    letter-spacing: 2px;
+    outline: none;
+    border-radius: 25px;
+    transition: all .5s ease-in-out;
+    background-color: #22a6b3;
+    padding-right: 40px;
+    color:rgb(0, 0, 0);
+  }
+  .input-search::placeholder{
+    color:black;
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-weight: 100;
+  }
+  .btn-search{
+    width: 50px;
+    height: 50px;
+    border-style: none;
+    font-size: 20px;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+    border-radius: 50%;
+    position: absolute;
+    right: 0px;
+    color:#000000 ;
+    background-color:transparent;
+    pointer-events: painted;  
+  }
+  .btn-search:focus ~ .input-search{
+    width: 300px;
+    border-radius: 0px;
+    background-color: transparent;
+    border-bottom:1px solid rgba(0, 0, 0, 0.5);
+    transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+  }
+  .input-search:focus{
+    width: 300px;
+    border-radius: 0px;
+    background-color: transparent;
+    border-bottom:1px solid rgba(255,255,255,.5);
+    transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+  }
+  

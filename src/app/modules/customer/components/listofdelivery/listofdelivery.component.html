@@ -1,0 +1,53 @@
+<div class="finance__describ">
+  <h1>List Of Delivery</h1>
+  
+</div>
+<div class="search-box">
+  <button class="btn-search" (click)="myFunction()"><i class="fas fa-search"></i></button>
+  <input type="text" id="myInput" class="input-search" (click)="myFunction()" placeholder="Type to Search...">
+  
+</div>
+
+<div class="table__cont">
+    <div style="margin: 5%">
+      
+      <br />
+      <table id="myTable">
+        <thead>
+          <tr>
+            <th>Billing document
+            </th>
+  
+            <th>Created Name</th>
+  
+            <th>Total weight</th>
+  
+            <th>Last change by</th>
+  
+            <th>Date of last change</th>
+  
+            <th>Time zone</th>
+  
+            <th>Currency</th>
+          </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let chs of delivery; let i=index ">
+              <td>{{ docnumlist[i] || altdata }}</td>
+    
+              <td>{{ chs.ERNAM._text || altdata  }}</td>
+    
+              <td>{{ chs.BTGEW._text || altdata }}</td>
+    
+              <td>{{ chs.AENAM._text || altdata }}</td>
+    
+              <td>{{ datefortamt[i] || altdata }}</td>
+    
+              <td>{{ chs.TZONIS._text || altdata }}</td>
+    
+              <td>{{ chs.WAERK._text || altdata }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>

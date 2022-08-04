@@ -1,0 +1,56 @@
+
+<div class="finance__describ">
+  <i class="fa-solid fa-file-magnifying-glass"></i>
+  <h1>Inquiry Data</h1>
+
+  
+</div>
+<nav class="table__nav">
+  <!-- <input type="text" class="input-text" id="myInput" (click)="myFunction()" placeholder=" " title="Type in a name">
+  
+  <button (click)="myFunction()">Search</button> -->
+  <div class="search-box">
+    <button class="btn-search" (click)="myFunction()"><i class="fas fa-search"></i></button>
+    <input type="text" id="myInput" class="input-search" (click)="myFunction()" placeholder="Type to Search...">
+    
+  </div>
+  
+  <!-- <input type="button"  value="Download PDF" class="btn btn-success" (click)="SavePDF()">   -->
+</nav>
+
+<div class="table__cont">
+<div  style="margin: 5%;">
+    
+    <table id="myTable" >
+      <thead >
+        <tr>
+
+
+          <th>Billing document</th>
+          <th>Created by </th>
+          <th>Document date
+          </th>
+          <th >Entry time</th>
+          <th>Net Value</th>
+          <th>Pricing procedure</th>
+          <th >PO number</th>
+          
+        </tr>
+      </thead>
+      <tbody>
+        
+        <tr *ngFor="let chs of inquiry; let i=index " >
+          <td>{{ docnumlist[i] }}</td>
+          <td>{{chs.ERNAM._text||msg}}</td>
+          <td>{{datefortamt[i] ||msg}}</td>
+          <td>{{chs.ERZET._text||msg}}</td>
+          <td>{{chs.NETWR._text||msg}}</td>
+          <td> {{chs.KALSM._text||msg}} </td>
+          <td>{{chs.BSTNK._text||msg}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="dummy"></div>
+</div>
+

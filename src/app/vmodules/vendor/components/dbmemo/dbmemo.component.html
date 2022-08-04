@@ -1,0 +1,50 @@
+
+<div class="finance__describ">
+    <h1>Debit Memo</h1>
+    
+  </div>
+  <div class="search-box">
+    <button class="btn-search" (click)="myFunction()"><i class="fas fa-search"></i></button>
+    <input type="text" id="myInput" class="input-search" (click)="myFunction()" placeholder="Type to Search...">
+    
+  </div>
+  
+  <div class="table__cont">
+  <div style="margin: 5%;">
+      
+      <table id="myTable" >
+        <thead >
+          <tr>
+  
+            <th >plant</th>
+            <th>no of line items</th>
+            <th>material number</th>
+            <th>fiscal year</th>
+            <th >company code</th>
+            <th>unit of measurement</th>
+            <th>quantity</th>
+            
+            
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let chs of dmemo; let i = index" >
+            <td>{{chs.WERKS._text}}</td>
+            <td>{{chs.BUZEI._text}}</td>
+            <td>{{docnumlist[i]}}</td>
+            <td>{{chs.GJAHR._text}}</td>
+            <td>{{chs.BUKRS._text}}</td>
+            <td>{{chs.MEINS._text}}</td>
+            <td>{{chs.MENGE._text}}</td>
+            
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="fotter">
+      <button class="back__btn" [routerLink]="'/vendor/financesheet'" >
+        <i class="fa-solid fa-square-caret-left"></i> Back</button>
+    </div>
+  </div>
+  
+  

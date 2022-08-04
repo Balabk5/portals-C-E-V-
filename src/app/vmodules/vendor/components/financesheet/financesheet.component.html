@@ -1,0 +1,46 @@
+<div class="finance__describ">
+    <h1>Finance Sheet</h1>
+    <h3>click the below cards to View more on Invoice,Crdit,Debit memo and Payment aging</h3>
+</div>
+<div class="finance__cont">
+    
+    <div class="invoice__cont">
+        <div class="social-menu">
+            <ul>
+                <li><a href="#" target="blank"><i class="fab fa-solid fa-file-invoice"></i></a></li>
+            </ul>
+        </div>
+        <h2 class="click__hed1">Invoice details</h2>
+        <button type="submit" [routerLink]="'/vendor/invoice'" class="btn1">click here</button>
+    </div>
+    
+    <div class="payment__cont">
+        <div class="social-menu">
+            <ul>
+                <li><a href="#" target="blank"><i class="fab fa-solid fa-envelope"></i></a></li>
+            </ul>
+        </div>
+
+        <h2 class="click__hed3">Credit Memo</h2>
+        <button type="submit" class="btn1" [routerLink]="'/vendor/cdmemo'">click here</button>
+    </div>
+    <div class="credit_cont">
+        <div class="social-menu">
+            <ul>
+                <li><a href="#" target="blank"><i class="fab fa-solid fa-money-check-dollar"></i></a></li>
+            </ul>
+        </div>
+        <h2 class="click__hed3">Debit Memo</h2>
+        <button type="submit" class="btn1" [routerLink]="'/vendor/dbmemo'">click here</button>
+    </div>
+    <div class="credit_cont">
+        <div class="social-menu">
+            <ul>
+                <li><a href="#" target="blank"><i class="fab fa-solid fa-money-check-dollar"></i></a></li>
+            </ul>
+        </div>
+        <h2 class="click__hed2">Payment and aging</h2>
+        <button type="submit" class="btn1" [routerLink]="'/vendor/paymentageing'">click here</button>
+    </div>
+</div>
+    

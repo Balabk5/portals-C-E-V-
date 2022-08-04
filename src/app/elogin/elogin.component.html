@@ -1,0 +1,47 @@
+<div class="parent">
+    <div class="child1">
+        <div class="centerelements">
+            <img src="/assets/images/emp__login.png" alt="" class="pn-login-image">
+            <h1 class="pm-cont">Welcome to Employee </h1>
+            
+            <h1 class="pm-cont">Portal</h1>
+            <p class="pm-sub-cont">One stop for getting details on your Inquiry data,Sale order data and List of Delivery 
+            </p>
+            <p class="pm-sub-cont1">  from the organization
+            </p>
+        </div>
+    </div>
+    <div class="child2">
+        <div class="container">
+            <div class="signup-container">
+                <h1 class="heading-primary">Log in
+                    <span class="span-blue">.</span>
+                </h1>
+                <p class="text-mute">Enter your credentials to access your account.</p>
+                <form class="signup-form" #f="ngForm" (ngSubmit)="getresult(f)" >
+                    <label class="inp">
+                        <input type="email" ngModel class="input-text" id="" placeholder=" " name="uname"  #name="ngModel" required/>
+                        <!-- <Input id="user" class="input-text"> -->
+                        <span class="label">Email</span>
+                        <span class="input-icon">
+                            <i class="fa-solid fa-envelope"></i>
+                        </span>
+                    </label>
+                    <label class="inp">
+                        <input type="password" ngModel class="input-text" placeholder=" " id="pass" name="pwd"  #pwd="ngModel" required/>
+                        <!-- <Input id="pass" type="Password" class="input-text"> -->
+                        <span class="label">Password</span>
+                        <span class="input-icon input-icon-password">
+                            <i class="fa-solid fa-eye"></i>
+                        </span>
+                    </label>
+                    <button type="submit" class="btn1">Login</button>
+                    <!-- <Button text="login" class="btn-new" press="onPress"/> -->
+                    <a href="#" class="forget-pass"><h4>Forgotten Password?</h4></a>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<ngx-ui-loader fgsColor="green" fgsType="square-jelly-box" pbColor="green" text="Please wait!"  logoPosition= "center-center"
+ logoUrl="assets/images/kaarlogomain.png"></ngx-ui-loader>

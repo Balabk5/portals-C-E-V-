@@ -1,0 +1,124 @@
+.profile__cont__main{
+    height: 70vh;
+    width: 82rem;
+    
+    background-image: url('/assets/images/prof_cust-imh.png');
+    background-repeat: no-repeat;
+  background-size: 30rem 30rem;
+    background-position: 90% 110%;
+}
+
+.finance__describ{
+    height: 7rem;
+    width: 50rem;
+    margin-top: 2rem;
+    margin-left: 17rem;
+    border-bottom: 1px solid black;
+    margin-bottom: 4rem;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; */
+
+}
+.finance__describ h1,.finance__describ h3{
+    text-align: center;
+}
+.finance__describ h1{
+    font-size: 4rem;
+    padding-top: 1rem;
+    
+    color: black;
+}
+
+.profile__cont{
+    height: 30rem;
+    width: 25rem;
+    border-radius: .5rem;
+    
+    margin-left: 20rem;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    
+}
+
+.p4-main {
+    
+    height: 40rem;
+    width: 100%;
+}
+
+.p4-hed-cont {
+    height: 6rem;
+    width: 100%;
+}
+
+.p4-hed-cont h1 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight:600 ;
+    margin-top: 2rem;
+    margin-left: 1rem;
+}
+
+.p4-hed-cont h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: .5rem;
+    color: #008060;
+}
+
+.p4-highlight {
+    background-color: #008060;
+}
+
+.p4-highlight-color {
+    color: white;
+}
+.social-menu ul{
+   margin-left: 7.5rem;
+  padding-top: 1rem;
+}
+
+.social-menu ul li{
+    list-style: none;
+    margin: 0 15px;
+}
+
+.social-menu ul li .fab{
+    font-size: 90px;
+    line-height: 110px;
+    transition: .3s;
+    color: white;
+}
+
+.social-menu ul li .fab:hover{
+    color: #fff;
+}
+
+.social-menu ul li a{
+    position: relative;
+    display: block;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: black;
+    text-align: center;
+    transition: .6s;
+    /* box-shadow: 0 5px 4px rgba(0,0,0,.5); */
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px; 
+    
+}
+
+.social-menu ul li a:hover{
+    transform: translate(0, -10%);
+}
+
+.social-menu ul li:nth-child(1) a:hover{
+    background-color: rgba(0, 0, 0, 0.829);
+}
+.prof_main_details{
+    height: 15rem;
+    width: 100%;
+    padding-left: 3rem;
+    padding-top: 2rem;
+}
+.prof_main_details h3{
+    margin-bottom: 1rem;
+}

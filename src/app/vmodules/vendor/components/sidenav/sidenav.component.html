@@ -1,0 +1,26 @@
+<nav class="sidenav">
+    <div class="cont1">
+      <h1 class="hed-main">Vendor Portal</h1>
+      <div class="cust-logo">
+          <img src="/assets/images/vendor-port-log-sidenav.png" alt="" class="cust-logo-img">
+      </div>
+      <h2 class="welcome">Welcome</h2>
+      <h4 class="Prof__name">{{fname}}</h4>
+      
+    </div>
+  
+    <ul class="list-items">
+      <li><a href="#" [routerLink]="'/vendor/profile'" [routerLinkActive]="['active']"><i class="fa-solid fa-user"></i>Profile</a></li>
+      <li><a href="#" [routerLink]="'/vendor/recforqtn'" [routerLinkActive]="['active']"><i class="fa-solid fa-credit-card"></i> Req for Quotation</a></li>
+      <li><a href="#" [routerLink]="'/vendor/purchaseorder'" [routerLinkActive]="['active']"><i class="fa-solid fa-shop"></i>Purchase Order</a></li>
+      <li><a href="#" [routerLink]="'/vendor/goodsreceipt'" [routerLinkActive]="['active']"><i class="fa-solid fa-receipt"></i>Goods Receipt</a></li>
+      <li><a href="#" [routerLink]="'/vendor/financesheet'" [routerLinkActive]="['active']"><i class="fa-solid fa-chart-pie"></i>Finance Sheet</a></li>
+      
+      </ul>
+      
+    <div class="list-items logout">
+      <li><a (click)="popupcust()"><i class="fa-solid fa-arrow-right-from-bracket"></i>Logout</a></li>
+    </div>
+  </nav>
+
+  

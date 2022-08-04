@@ -1,0 +1,51 @@
+
+<div class="finance__describ">
+    <h1>Quotation Request</h1>
+    
+  </div>
+  <div class="search-box">
+    <button class="btn-search" (click)="myFunction()"><i class="fas fa-search"></i></button>
+    <input type="text" id="myInput" class="input-search" (click)="myFunction()" placeholder="Type to Search...">
+    
+  </div>
+  
+  <div class="table__cont">
+  <div style="margin: 5%;">
+      
+      <table id="myTable">
+        <thead >
+          <tr>
+            <th >Customer number</th>
+            <th >Vendor Name</th>
+  
+            <th>Created on</th>
+            <th>Created by</th>
+            <th>Last item</th>
+            <th >Cash disc</th>
+            <th >Currency</th>
+            <th>Incoterms</th>
+           
+            
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let chs of req; let i = index" >
+            <td>{{docnumlist[i] }}</td>
+            <td>{{chs.VEND_NAME._text }}</td>
+            <td>{{datefortamt[i]|| msg}}</td>
+            <td>{{chs.CREATED_BY._text || msg}}</td>
+            <td>{{chs.LAST_ITEM._text || msg}}</td>
+            <td>{{chs.CASH_DISC1._text || msg}}</td>
+            <td>{{chs.CURRENCY._text || msg}}</td>
+            
+            <td>{{chs.INCOTERMS1._text|| msg }}</td>
+            
+           
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="dummy"></div>
+  </div>
+  
+  

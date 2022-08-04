@@ -1,0 +1,162 @@
+.sidenav{
+  height: 100vh;
+  width: 17.5%;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  
+  position: fixed;
+}
+.cont1{
+  padding-top: 2rem;
+}
+.cust-logo{
+  height: 7rem;
+  width: 7rem;
+  margin: auto 3.8rem;
+}
+.cust-logo-img{
+  height: inherit;
+  width: inherit;
+  margin-left: .3rem;
+  margin-top: .4rem;
+}
+
+.nav-menu li{
+  list-style: none;
+  margin-bottom: 2rem;
+  
+  height: 2rem;
+  
+}
+.hed-main{
+  margin-left: .7rem;
+  font-size: 1.9rem;
+}
+.prof__name{
+margin-left: 5rem;
+margin-top: .4rem;
+}
+
+.menu{
+  height: 3rem;
+  
+}
+.menu-link{
+  text-decoration: none;
+  margin-left: 3rem;
+  
+  font-size: 1.2rem;
+  color: wheat;
+}
+
+.list-items{
+  position: relative;
+  background-color: black;
+  width: 100%;
+  height: 28%;
+  list-style: none;
+  margin-top: 3.5rem;
+}
+.list-items li{
+  /* padding-left: 2rem; */
+  line-height: 50px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  border-bottom: 1px solid #333;
+  transition: all 0.3s ease;
+}
+.list-items li:hover{
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  box-shadow: 0 0px 10px 3px #222;
+}
+.list-items li:first-child{
+  border-top: none;
+}
+.list-items li a{
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  height: 100%;
+  width: 100%;
+  display: block;
+  padding-left: 2rem;
+}
+
+.active{
+
+background-color: green;
+}
+.list-items li a i{
+  margin-right: 20px;
+}
+.list-items .icons{
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  position: absolute;
+  bottom: 100px;
+  line-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.list-items .icons a{
+  height: 100%;
+  width: 40px;
+  display: block;
+  margin: 0 5px;
+  font-size: 18px;
+  color: #f2f2f2;
+  background: #4a4a4a;
+  border-radius: 5px;
+  border: 1px solid #383838;
+  transition: all 0.3s ease;
+}
+.list-items .icons a:hover{
+  background: #404040;
+}
+.list-items .icons a:first-child{
+  margin-left: 0px;
+}
+
+
+.list-items > .active > a { 
+background-color: black ; 
+}
+.logout{
+   margin-top: 10.5rem;
+}
+
+
+
+.welcome{
+  margin-left: 4.3rem;
+  margin-bottom: .5rem;
+}
+
+
+.Prof__name{
+  margin-left: .5rem;
+}
+ .logout{
+     margin-top: 15rem;
+ }
+
+
+
+
+ .prof__name{
+  margin-left: 1.5rem;
+  margin-bottom: .5rem;
+ }
+ .Practice__role{
+  margin-left: .5rem;
+  margin-bottom: 2rem;
+ }
+ .active{
+  background-color: green;
+ }

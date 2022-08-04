@@ -1,0 +1,104 @@
+.finance__cont{
+    height: 70vh;
+    width: 82rem;
+    margin-left: 2rem;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 1.5%;
+}
+.finance__describ{
+    height: 10rem;
+    width: 82rem;
+}
+.finance__describ h1,.finance__describ h3{
+    text-align: center;
+}
+.finance__describ h1{
+    font-size: 4rem;
+    padding-top: 1rem;
+    margin-bottom: 1rem;
+}
+.finance__describ h3{
+    font-size: 1rem;
+}
+.invoice__cont,.payment__cont,.credit_cont{
+    height: 15rem;
+    width: 15rem;
+    margin-top: 7rem;
+    border-radius: .5rem;
+    background-color: rgb(215, 239, 250);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.social-menu ul{
+    margin-left: 3rem;
+   padding-top: 1rem;
+ }
+ 
+ .social-menu ul li{
+     list-style: none;
+     margin: 0 15px;
+ }
+ 
+ .social-menu ul li .fab{
+     font-size: 60px;
+     line-height: 90px;
+     transition: .3s;
+     color: white;
+ }
+ 
+ .social-menu ul li .fab:hover{
+     color: #fff;
+ }
+ 
+ .social-menu ul li a{
+     position: relative;
+     display: block;
+     width: 100px;
+     height: 100px;
+     border-radius: 50%;
+     background-color: black;
+     text-align: center;
+     transition: .6s;
+     /* box-shadow: 0 5px 4px rgba(0,0,0,.5); */
+     box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+     
+ }
+ 
+ .social-menu ul li a:hover{
+     transform: translate(0, -10%);
+     background-color: rgba(0, 0, 0, 0.829);
+ }
+ 
+
+ .click__hed1{
+    margin-top: 1rem;
+    margin-left: 2rem;
+ }
+ .click__hed2{
+    margin-top: 1rem;
+    margin-left: .7rem;
+ }
+ .click__hed3{
+    margin-top: 1rem;
+    margin-left: 3rem;
+ }
+ .btn1 {
+    height: 2.6rem !important;
+    width: 6rem;
+    margin-top: .5rem;
+    margin-left: 4.2rem;
+    background-color: black !important;
+    border-radius: .3rem;
+    color: white;
+    border: none;
+    transition: .6s;
+    font-family: sans-serif;
+    font-size: 1rem;
+    font-weight: 550;
+    
+}
+
+.btn1:hover {
+    transform: scale(1.1);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}

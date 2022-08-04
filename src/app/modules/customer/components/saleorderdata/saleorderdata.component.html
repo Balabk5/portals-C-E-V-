@@ -1,0 +1,51 @@
+<div class="finance__describ">
+  <h1>Sale Order</h1>
+  
+</div>
+<div class="search-box">
+  <button class="btn-search" (click)="myFunction()"><i class="fas fa-search"></i></button>
+  <input type="text" id="myInput" class="input-search" (click)="myFunction()" placeholder="Type to Search...">
+  
+</div>
+<div class="table__cont">
+
+    <div  style="margin: 5%;">
+        
+        <br>
+        <table id="myTable" >    
+          <thead >
+            <tr>
+              <th>Item No.</th>
+    
+              <th>Name</th>
+    
+              <th>Net Price</th>
+    
+              <th>Net Value</th>
+    
+              <th> Date</th>
+              <th> Currency </th>
+    
+              <th>Status</th>
+    
+              <th >Short text</th>
+            </tr>
+          </thead>
+   <tbody>
+            <tr *ngFor="let krr of saleorder; let i=index " >
+              <td>{{docnumlist[i]}}</td>
+              <td>{{krr.NAME._text}}</td>
+              <td>{{krr.NET_PRICE._text}}</td>
+              <td>{{krr.NET_VALUE._text}}</td>
+              <td>{{datefortamt[i]}}</td>
+              <td>{{krr.CURRENCY._text}}</td>
+              <td>{{krr.DOC_STATUS._text}}</td>
+              <td>{{krr.SHORT_TEXT._text}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div> 
+      <div class="fotter">
+        
+      </div>
+    </div>  

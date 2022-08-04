@@ -1,0 +1,52 @@
+
+<div class="finance__describ">
+    <h1>Payment Ageing</h1>
+    
+  </div>
+  <div class="search-box">
+    <button class="btn-search" (click)="myFunction()"><i class="fas fa-search"></i></button>
+    <input type="text" id="myInput" class="input-search" (click)="myFunction()" placeholder="Type to Search...">
+    
+  </div>
+  
+  <div class="table__cont">
+  <div style="margin: 5%;">
+      
+      <table id="myTable">
+        <thead >
+          <tr>
+  
+            <th>Doc no</th>
+            <th >Company code</th>
+            <th>Update currency</th>
+            <th>Update amount</th>
+            <th>Doc currency</th>
+            <th>Local currency</th>
+            <th>Posting key</th>
+            
+            
+            
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let chs of payment" >
+            <td>{{chs.BUKRS._text || msg}}</td>
+            <td>{{chs.BELNR._text || msg}}</td>
+            <td>{{chs.PSWSL._text || msg }}</td>
+            <td>{{chs.PSWBT._text || msg}}</td>
+            <td>{{chs.WRBTR._text || msg}}</td>
+            <td>{{chs.DMBTR._text || msg}}</td>
+            <td>{{chs.BSCHL._text || msg}}</td>
+            
+            
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="fotter">
+      <button class="back__btn" [routerLink]="'/vendor/financesheet'" >
+        <i class="fa-solid fa-square-caret-left"></i> Back</button>
+    </div>
+  </div>
+  
+  

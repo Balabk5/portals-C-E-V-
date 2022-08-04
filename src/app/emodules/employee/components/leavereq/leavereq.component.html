@@ -1,0 +1,50 @@
+
+<div class="finance__describ">
+    <h1>Leave Request</h1>
+    
+  </div>
+  <div class="search-box">
+    <button class="btn-search" (click)="myFunction()"><i class="fas fa-search"></i></button>
+    <input type="text" id="myInput" class="input-search" (click)="myFunction()" placeholder="Type to Search...">
+    
+  </div>
+  
+  
+  
+  <div class="table__cont">
+  <div  style="margin: 5%;">
+      
+      <table id="myTable">
+        <thead >
+          <tr>
+  
+  
+            <th>Absent days</th>
+            <th>Absent hours</th>
+            <th>Leave type</th>
+            <th >Employee number</th>
+            <th>Valid from</th>
+            <th>Valid till</th>
+            
+            <th >Leave type name</th>
+            
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let chs of leave " >
+            <td>{{chs.ABSENCEDAYS._text}}</td>
+            <td>{{chs.ABSENCEHOURS._text}}</td>
+            <td>{{chs.ABSENCETYPE._text}}</td>
+            <td>{{chs.EMPLOYEENO._text}}</td>
+            <td> {{chs.VALIDBEGIN._text}} </td>
+            <td>{{chs.VALIDEND._text}}</td>
+            
+            <td>{{chs.NAMEOFABSENCETYPE._text}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="dummy"></div>
+  </div>
+  
+  
